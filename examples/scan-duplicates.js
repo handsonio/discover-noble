@@ -2,10 +2,11 @@ var noble = require('noble');
 var columnify = require('columnify');
 var options = {  
   showHeaders: false,
-  minWidth: 10,
+  minWidth: 15,
+  truncate: true,
   config: {
-    id: {maxWidth: 20},
-    name: {minWidth:20, maxWidth: 20}
+    id: {maxWidth: 15},
+    name: {maxWidth: 15}
 }};
 
 noble.on('stateChange', function(state) {
