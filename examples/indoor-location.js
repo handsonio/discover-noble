@@ -17,5 +17,5 @@ Bleacon.on('discover', function(bleacon) {
     utils.computeProximity(filteredRssi, bleacon.measuredPower));
 });
 
-Bleacon.startScanning();
+Bleacon.startScanning('326a900085cb9195d9dd464cfbbae75a'); // MetaWear E9:F0
 
