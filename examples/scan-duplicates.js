@@ -5,7 +5,7 @@ var options = {
   minWidth: 10,
   config: {
     id: {maxWidth: 20},
-    name: {maxWidth: 20}
+    name: {minWidth:20, maxWidth: 20}
 }};
 
 noble.on('stateChange', function(state) {
