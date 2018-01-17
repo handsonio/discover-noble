@@ -26,6 +26,7 @@
   },
   "homepage": "https://github.com/handsonio/discover-noble#readme",
   "dependencies": {
+    "columnify": "^1.5.4",
     "noble": "^1.8.1"
   }
 }

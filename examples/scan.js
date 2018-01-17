@@ -1,4 +1,12 @@
 var noble = require('noble');
+var columnify = require('columnify');
+var options = {  
+  showHeaders: false,
+  minWidth: 10,
+  config: {
+    id: {maxWidth: 20},
+    name: {maxWidth: 20}
+}};
 
 noble.on('stateChange', function(state) {
   if (state === 'poweredOn') {
@@ -9,9 +17,13 @@ noble.on('stateChange', function(state) {
 });
 
 noble.on('discover', function(peripheral) {
-  console.log('Device found : %s %s %s %s', 
-    peripheral.id, 
-    peripheral.advertisement.localName, 
-    peripheral.connectable, 
-    peripheral.addressType);
+  var data = {
+    'mac': peripheral.id,
+    'name': peripheral.advertisement.localName,
+    'rssi': peripheral.rssi,
+    'connectable': peripheral.connectable,
+    'addressType': peripheral.addressType
+  }
+
+  console.log(columnify([data], options));
 });
