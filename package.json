@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "adapter-state": "node examples/adapter-state.js",
+    "adapter-state-scan": "node examples/adapter-state-scan.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
