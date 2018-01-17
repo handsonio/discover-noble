@@ -2,6 +2,8 @@
 
 This repository contains the code used during an handson.io tech talk aiming at demonstrating the basics of the BLE communication in Raspberry Pi using [Noble](https://github.com/sandeepmistry/noble)
 
+Setup your raspberry Pi Zero W with [these instructions](https://github.com/handsonio/zerow-metawear) to be able to properly run the course.
+
 ## Adapter state - Powering on and off
 
 `npm run adapter-state`
