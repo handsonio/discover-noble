@@ -10,6 +10,7 @@
     "indoor-location": "node examples/indoor-location.js",
     "discover-char": "node examples/discover-char.js",
     "read-char": "node examples/read-char.js",
+    "write-char": "node examples/write-char.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
