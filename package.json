@@ -9,6 +9,7 @@
     "scan-duplicates": "node examples/scan-duplicates.js",
     "indoor-location": "node examples/indoor-location.js",
     "discover-char": "node examples/discover-char.js",
+    "discover-char": "node examples/read-char.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
