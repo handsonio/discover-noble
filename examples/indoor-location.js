@@ -8,10 +8,8 @@ Bleacon.on('discover', function(bleacon) {
 
   console.log('device: uuid = %s, rssi = %d, filteredRssi = %d, measuredPower = %d, proximity = %s, filteredProximity = %s', 
     bleacon.uuid,
-    bleacon.minor,
-    bleacon.major,
     bleacon.rssi, 
-    filteredRssi, 
+    filteredRssi,
     bleacon.measuredPower, 
     bleacon.proximity,
     utils.computeProximity(filteredRssi, bleacon.measuredPower));
