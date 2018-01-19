@@ -1,3 +1,5 @@
+// MetaWear BEACON UUID : '326a900085cb9195d9dd464cfbbae75a'
+
 var Bleacon = require('bleacon');
 var utils = require('../utils/proximity');
 var KalmanFilter = require('kalmanjs').default;
@@ -15,5 +17,6 @@ Bleacon.on('discover', function(bleacon) {
     utils.computeProximity(filteredRssi, bleacon.measuredPower));
 });
 
-Bleacon.startScanning('326a900085cb9195d9dd464cfbbae75a'); // MetaWear E9:F0
+// Bleacon scan on the advertised UUID, the one included within the payload, this is not the device UUID (MAC address)
+Bleacon.startScanning(); 
 
